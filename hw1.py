@@ -28,15 +28,19 @@ print (-b - (math.sqrt (b ** 2) * (4 * a * c))) / (2 * a)
 
 
 
-
 ###
 ### Problem 2
 ###
 
 print "Problem 2 solution follows:"
 
-# ... write your code and comments here (and remove this line)
-
+import hw1_test
+print "a =", hw1_test.a
+print "b =", hw1_test.b
+print "c =", hw1_test.c
+print "d =", hw1_test.d
+print "e =", hw1_test.e
+print "f =", hw1_test.f
 
 ###
 ### Problem 3
@@ -44,7 +48,8 @@ print "Problem 2 solution follows:"
 
 print "Problem 3 solution follows:"
 
-# ... write your code and comments here (and remove this line)
+print (hw1_test.a and hw1_test.b) or (not hw1_test.c) and not (hw1_test.d or hw1_test.d or hw1_test.f)
+
 
 
 ###
