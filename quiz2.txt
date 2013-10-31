@@ -1,9 +1,9 @@
 # From a module called lab2
 # import a variable called n
-# print one of the following things
-# if n is greater than 50
-# if n is less than 50
-# if n is equal to 50
+# print one of the following things for n
+# greater than 50
+# less than 50
+# equal to 50
 
 
 
