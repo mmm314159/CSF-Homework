@@ -32,12 +32,13 @@ print total
 
 # DO NOT CHANGE THE FOLLOWING LINE
 print "Problem 2 solution follows:"
-from math import *
-
-for i in range(1):
-    print(1/2)
+from math import fractions
 
 
+    
+    
+    
+    
 ###
 ### Problem 3
 ###

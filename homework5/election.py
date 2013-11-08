@@ -30,13 +30,72 @@ def row_to_edge(row):
     return float(row["Dem"]) - float(row["Rep"])  
 
 def state_edges(election_result_rows):
+    
     """
     Given a list of election result rows, returns state edges.
     The input list does has no duplicate states;
     that is, each state is represented at most once in the input list.
+    
+    
+    DISCLAIMER! I'm not sure this is correct, but it is functional, even if it does eat 50 lines
+    of code. I get errors in the test file when running it, however. Unfortunately, solving this
+    problem used the entire time alotted, but I feel like I'm starting to slowly get the
+    hang of it and I intend to try my hand at a few of the other problems this weekend.
+    I really enjoyed the context of this problem.
     """
-    #TODO: Implement this function
-    pass
+
+    print{((election_result_rows)[0]['State']) : (row_to_edge((election_result_rows)[0])) , 
+    ((election_result_rows)[1]['State']) : (row_to_edge((election_result_rows)[1])) , 
+    ((election_result_rows)[2]['State']) : (row_to_edge((election_result_rows)[2])) , 
+    ((election_result_rows)[3]['State']) : (row_to_edge((election_result_rows)[3])) , 
+    ((election_result_rows)[4]['State']) : (row_to_edge((election_result_rows)[4])) , 
+    ((election_result_rows)[5]['State']) : (row_to_edge((election_result_rows)[5])) , 
+    ((election_result_rows)[6]['State']) : (row_to_edge((election_result_rows)[6])) , 
+    ((election_result_rows)[7]['State']) : (row_to_edge((election_result_rows)[7])) , 
+    ((election_result_rows)[8]['State']) : (row_to_edge((election_result_rows)[8])) , 
+    ((election_result_rows)[9]['State']) : (row_to_edge((election_result_rows)[9])) , 
+    ((election_result_rows)[10]['State']) : (row_to_edge((election_result_rows)[10])) , 
+    ((election_result_rows)[11]['State']) : (row_to_edge((election_result_rows)[11])) , 
+    ((election_result_rows)[12]['State']) : (row_to_edge((election_result_rows)[12])) , 
+    ((election_result_rows)[13]['State']) : (row_to_edge((election_result_rows)[13])) , 
+    ((election_result_rows)[14]['State']) : (row_to_edge((election_result_rows)[14])) , 
+    ((election_result_rows)[15]['State']) : (row_to_edge((election_result_rows)[15])) , 
+    ((election_result_rows)[16]['State']) : (row_to_edge((election_result_rows)[16])) , 
+    ((election_result_rows)[17]['State']) : (row_to_edge((election_result_rows)[17])) , 
+    ((election_result_rows)[18]['State']) : (row_to_edge((election_result_rows)[18])) , 
+    ((election_result_rows)[19]['State']) : (row_to_edge((election_result_rows)[19])) , 
+    ((election_result_rows)[20]['State']) : (row_to_edge((election_result_rows)[20])) , 
+    ((election_result_rows)[21]['State']) : (row_to_edge((election_result_rows)[21])) , 
+    ((election_result_rows)[22]['State']) : (row_to_edge((election_result_rows)[22])) , 
+    ((election_result_rows)[23]['State']) : (row_to_edge((election_result_rows)[23])) , 
+    ((election_result_rows)[24]['State']) : (row_to_edge((election_result_rows)[24])) , 
+    ((election_result_rows)[25]['State']) : (row_to_edge((election_result_rows)[25])) , 
+    ((election_result_rows)[26]['State']) : (row_to_edge((election_result_rows)[26])) , 
+    ((election_result_rows)[27]['State']) : (row_to_edge((election_result_rows)[27])) , 
+    ((election_result_rows)[28]['State']) : (row_to_edge((election_result_rows)[28])) , 
+    ((election_result_rows)[29]['State']) : (row_to_edge((election_result_rows)[29])) , 
+    ((election_result_rows)[30]['State']) : (row_to_edge((election_result_rows)[30])) , 
+    ((election_result_rows)[31]['State']) : (row_to_edge((election_result_rows)[31])) , 
+    ((election_result_rows)[32]['State']) : (row_to_edge((election_result_rows)[32])) , 
+    ((election_result_rows)[33]['State']) : (row_to_edge((election_result_rows)[33])) , 
+    ((election_result_rows)[34]['State']) : (row_to_edge((election_result_rows)[34])) , 
+    ((election_result_rows)[35]['State']) : (row_to_edge((election_result_rows)[35])) , 
+    ((election_result_rows)[36]['State']) : (row_to_edge((election_result_rows)[36])) , 
+    ((election_result_rows)[37]['State']) : (row_to_edge((election_result_rows)[37])) , 
+    ((election_result_rows)[38]['State']) : (row_to_edge((election_result_rows)[38])) , 
+    ((election_result_rows)[39]['State']) : (row_to_edge((election_result_rows)[39])) , 
+    ((election_result_rows)[40]['State']) : (row_to_edge((election_result_rows)[40])) , 
+    ((election_result_rows)[41]['State']) : (row_to_edge((election_result_rows)[41])) , 
+    ((election_result_rows)[42]['State']) : (row_to_edge((election_result_rows)[42])) , 
+    ((election_result_rows)[43]['State']) : (row_to_edge((election_result_rows)[43])) , 
+    ((election_result_rows)[44]['State']) : (row_to_edge((election_result_rows)[44])) , 
+    ((election_result_rows)[45]['State']) : (row_to_edge((election_result_rows)[45])) , 
+    ((election_result_rows)[46]['State']) : (row_to_edge((election_result_rows)[46])) , 
+    ((election_result_rows)[47]['State']) : (row_to_edge((election_result_rows)[47])) , 
+    ((election_result_rows)[48]['State']) : (row_to_edge((election_result_rows)[48])) , 
+    ((election_result_rows)[49]['State']) : (row_to_edge((election_result_rows)[49])) , 
+    ((election_result_rows)[50]['State']) : (row_to_edge((election_result_rows)[50]))}
+    
 
 
 ################################################################################
