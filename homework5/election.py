@@ -35,13 +35,6 @@ def state_edges(election_result_rows):
     Given a list of election result rows, returns state edges.
     The input list does has no duplicate states;
     that is, each state is represented at most once in the input list.
-    
-    
-    DISCLAIMER! I'm not sure this is correct, but it is functional, even if it does eat 50 lines
-    of code. I get errors in the test file when running it, however. Unfortunately, solving this
-    problem used the entire time alotted, but I feel like I'm starting to slowly get the
-    hang of it and I intend to try my hand at a few of the other problems this weekend.
-    I really enjoyed the context of this problem.
     """
 
     print{((election_result_rows)[0]['State']) : (row_to_edge((election_result_rows)[0])) , 
