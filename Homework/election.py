@@ -1,7 +1,8 @@
 # Name: Branddon Gordon
 # Evergreen Login: Gorbra14
 # Programming as a Way of Life
-# Homework 5: Election prediction
+# Homework 5: Election Prediction
+# Homework 6: Problem 0
 
 import csv
 import os
@@ -88,7 +89,7 @@ def state_edges(election_result_rows):
     ((election_result_rows)[48]['State']) : (row_to_edge((election_result_rows)[48])) , 
     ((election_result_rows)[49]['State']) : (row_to_edge((election_result_rows)[49])) , 
     ((election_result_rows)[50]['State']) : (row_to_edge((election_result_rows)[50]))}
-    
+    print state_edges
 
 
 ################################################################################
