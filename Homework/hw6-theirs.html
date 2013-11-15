@@ -1,0 +1,483 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.0.1  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="0;0">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 1in }
+		P { margin-bottom: 0.08in }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR" STYLE="border: none; padding: 0in">
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Programming
+as a Way of Life</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Homework
+6 Problems</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Group
+05 </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Group
+Member 1 Katrina Sayre</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Group
+Member 2 Alexei McConville</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">###################################################################################</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Problem
+3: Nested Data Structures</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Sets,
+tuples, and dictionaries are all types of data structures.  They can
+be used individually or can be</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&quot;nested&quot;
+inside of eachother.  For example, you can have a dictionary
+containing a list.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&quot;A
+tuple is a sequence of values. The values can be any type, and they
+are indexed by</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">integers,
+so in that respect tuples are a lot like lists. The important
+difference is that tuples</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">are
+immutable.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">A
+dictionary is like a list, but more general. In a list, the indices
+have to be integers; in a</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">dictionary
+they can be (almost) any type.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">You
+can think of a dictionary as a mapping between a set of indices
+(which are called keys)</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">and
+a set of values. Each key maps to a value. The association of a key
+and a value is called</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">a
+key-value pair or sometimes an item.&quot;*</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">A
+set can store certain values without any particular order and no
+repeated values.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Data
+structure indicators:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">set
+= set[1,2,3]</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">tuple
+= (  )</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">dictionary
+= {  }</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Dictionary
+example: </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">d
+= { &quot;Mom&quot; : &quot;360-555-1111&quot;, &quot;Dad&quot; :
+&quot;360-111-5555&quot; }</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">d
+[&quot;Mom&quot;]</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">#output</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&quot;360-555-1111&quot;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">#can
+reassign</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">d[&quot;Mom&quot;]
+= &quot;360-999-3333&quot;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">d
+[&quot;Mom&quot;]</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">#output</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&quot;360-999-3333&quot;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">~Practice
+making individual data structures:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;Make
+a tuple.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;Make
+a set.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;Make
+a dictionary.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Now,
+practice making nested data structures:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;Make
+a set containing a dictionary.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;Make
+a set containing a tuple.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;Make
+a set containing a dictionary that contains a set.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Note:
+When using an interpreter, you can determine what type something is
+by calling on the keyword 'type'.  The return</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">value
+is the type of object. </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">###################################################################################</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Problem
+4: 'for' and 'if' statements</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&quot;The
+syntax of a 'for' statement is similar to a function de&#64257;nition.
+It has a header that ends</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">with
+a colon and an indented body. The body can contain any number of
+statements.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">A
+for statement is sometimes called a loop because the &#64258;ow of
+execution runs through the</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">body
+and then loops back to the top.&quot;*</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Example
+of a 'for' statement:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">n
+= 25</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">x
+= 0</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">for
+i in range(n):</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;x
+= x + i</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;print
+x</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">~Practice
+making a 'for' loop:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Assign
+a variable to some number. Use a 'for' statement to indicate the
+range of that variable.  Have another variable, </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">which
+you identify before the 'for' statement.  Increase your second
+variable by the range of your first (add x+1, </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">x+2,...
+x+n).</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">###################################################################################</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Problem
+5: Definitions</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&quot;A
+function de&#64257;nition speci&#64257;es the name of a new function
+and the</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">sequence
+of statements that execute when the function is called.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Here
+is an example:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+print_lyrics():</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;print
+&quot;I'm a lumberjack, and I'm okay.&quot;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;print
+&quot;I sleep all night and I work all day.&quot;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+is a keyword that indicates that this is a function de&#64257;nition.
+The name of the function</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">is
+print_lyrics. The rules for function names are the same as for
+variable names: letters,</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">numbers
+and some punctuation marks are legal, but the &#64257;rst character
+can&rsquo;t be a number.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">You
+can&rsquo;t use a keyword as the name of a function, and you should
+avoid having a variable</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">and
+a function with the same name.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">The
+empty parentheses after the name indicate that this function doesn&rsquo;t
+take any arguments.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">The
+&#64257;rst line of the function de&#64257;nition is called the
+header; the rest is called the body.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">The
+header has to end with a colon and the body has to be indented. By
+convention, the</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">indentation
+is always four spaces (see Section 3.14). The body can contain any
+number of</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">statements.&quot;*</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">~Practice:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Define
+a function that, when called, prints your full name, first, middle,
+and last - each on separate lines. </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">###################################################################################</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Problem
+6: 'assert'</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">An
+'assert' call means everything that follows is Boolean (True or
+False). 'Assert' helps to fix bugs in your program by </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">confirming
+that all that should be true is and, if not, gives you an 'assertion
+error'.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">After
+you define a function, you can use the 'assert' to confirm that the
+function is working correctly.  </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">~Practice:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Define
+a function (call it 'square') that finds the square of a number, x. </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Define
+a test function (call it 'test_square') that confirms (via 'assert')
+that your previous 'square' </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">function
+works properly (give x any value and call your 'square' function -
+use a whole number).</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">###################################################################################</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Problem
+7: 'return' and 'pass' </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">The
+'pass' keyword does nothing - it is handy when you have a function
+that is not implemented yet, but the body of</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">the
+function cannot be empty - so, until you implement the function
+'pass' will stop the interpreter from barking at you.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">example:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+function():</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;pass</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">The
+'return' keyword works with function defintions; it exits the
+function and returns a value. </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">example:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+cube(x):</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;return
+x * x * x</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">a
+= cube(7)</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">b
+= cube(26)</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">#
+the function will calculate the cube of a number, the 'return' key
+will exit the function and return </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">#
+a value, that value is then assigned to the a, b variables.  </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">~Practice:
+</FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Define
+a function and pass it.  Define another function and return a value.
+Feel free to use previously defined </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">functions.
+</FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">****
+All quoted information is from our textbook, Think Python.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">###################################################################################</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Example
+of 'assert', 'return', sets, dictionaries, and function defintions:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">FILE
+1:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+row_to_edge(row):</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&quot;&quot;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;Given
+an election result row or poll data row, returns the Democratic edge</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;in
+that state.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;&quot;&quot;&quot;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;return
+float(row[&quot;Dem&quot;]) - float(row[&quot;Rep&quot;])  </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">FILE
+2:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+test_row_to_edge( ):</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;row1
+= { &quot;Dem&quot;: 41.3, &quot;Rep&quot;: 55.3 }</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;assert
+row_to_edge(row1) == -14</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;row2
+= { &quot;Dem&quot;: 38.4, &quot;Rep&quot;: 60.7 }</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;assert
+row_to_edge(row2) == -22.3</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;row3
+= { &quot;Dem&quot;: 36.9, &quot;Rep&quot;: 60.5}</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;assert
+row_to_edge(row3) == -23.6</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">The
+defined function, row_to_edge, in File 1 is written such that the
+'assert' statements are true. File 2 defines </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">and
+calls a function that is identical (in effect) to the function
+defined and called in File 1.  File 2 then uses </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">'assert'
+to test. </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">###################################################################################</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Example:
+</FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Create
+a text file that has the following information, in seperate columns
+and rows: </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Letter
+  X       Y</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">w
+       77      5</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">z
+       88      14</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Import
+that information into your program.  </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Define
+a function, call it &quot;first&quot;, that subtracts y from x for
+both letters, w and z.  </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Confirm
+that it is correct using a test function and 'assert'.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Define
+another function that creates a dictionary for each letter which
+contains the name of the letter </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">and
+the value that is returned by the &quot;first&quot; function. (Your
+goal output is {'w': '72'} for the first row.)</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Confirm
+that it is working correctly using a test function and 'assert'.</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">Example
+answer: </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">import
+file</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+first(row):</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;return
+float(row[&quot;X&quot;]) - float(row[&quot;Y&quot;])</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+test_first( ):</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;row1
+= { &quot;X&quot;: 77, &quot;Y&quot;: 5 }</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;assert
+first(row1) == 72</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+second(rows):  </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;first_diction
+= { }</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;for
+row in rows:</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result
+= first(row)</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter
+= (row('Letter')</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first_diction[letter]
+= result</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;return
+first_diction</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">def
+test_first_diction( ):</FONT></P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;rows1
+= [ { 'Letter': 'w', 'X': '77', 'Y': '5' } ] </FONT>
+</P>
+<P STYLE="margin-bottom: 0in; line-height: 0.25in"><FONT COLOR="#262626">&nbsp;&nbsp;&nbsp;&nbsp;assert
+first_diction(rows1) == { 'w': '72' }</FONT></P>
+</BODY>
+</HTML>
