@@ -34,7 +34,8 @@ print total
 print "Problem 2 solution follows:"
 from math import fractions
 
-
+for t in range(2,11):
+    print '1/',t
     
     
     
