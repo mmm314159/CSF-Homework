@@ -13,9 +13,11 @@ At the end, you will turn in this file along with your modified
 dna_analysis.py program.
 
 
+
 Problem 1:
 
 (No answers in this file.)
+
 
 Problem 2:
 
@@ -32,6 +34,7 @@ GC-content: 0.263157894737
 Sample 6 
 GC-content: 0.491518518519
 
+
 Problem 3:
 
 Commenting out the variable linenum throws a name error, on line 43,
@@ -44,6 +47,7 @@ that have been processed so far.
 Commenting out gc_count = 0 does the same thing as commenting out linenum; it
 is called as a variable, and since we commented it out, it was never initialized
 and therefore cannot be called.
+
 
 Problem 4:
 
@@ -65,3 +69,112 @@ I enjoyed this assignment because it provided context that is relevant to the
 real world. Actually writing a program (however small) that is similar in 
 intent to some of the most complicated coding and scientific discoveries of 
 my lifetime was really cool. And I'm a total genetics geek.
+
+
+Problem 5:
+
+GC-content: 0.43029262963
+AT-content: 0.568993851852
+A-count: 7701287
+C-count: 5879128
+G-count: 5738773
+T_count: 7661547
+Sum count of A, C, G, T: 26980735
+Total count: 27000000
+Seq length: 27000000
+AT/GC ratio: 1.32234161747
+Moderate GC content
+
+
+Problem 6:
+
+sample_1.fastq results
+ACGT Sum: 26980735
+Total_count: 27000000
+Sequence Length:27000000
+
+sample_2.fastq results
+ACGT Sum: 26977435
+Total_count: 27000000
+Sequence Length:27000000
+
+sample_3.fastq results
+ACGT Sum: 9510883
+Total_count: 9510928
+Sequence Length: 9510928
+
+sample_4.fastq results
+ACGT Sum: 9980961
+Total_count: 9981008
+Sequence Length: 9981008
+
+sample_5.fastq results
+ACGT Sum: 75
+Total_count: 76
+Sequence Length: 76
+
+sample_6.fastq results
+ACGT Sum: 26990
+Total_count: 27000
+Sequence Length: 27000
+
+test-high-gc-1.fastq results
+ACGT Sum: 39840
+Total_count: 40000
+Sequence Length: 40000
+
+test-high-gc-2.fastq results
+ACGT Sum: 39841
+Total_count: 40000
+Sequence Length: 40000
+
+test-moderate-gc-1.fastq results
+ACGT Sum: 39841
+Total_count: 40000
+Sequence Length: 40000
+
+test-moderate-gc-2.fastq results
+ACGT Sum: 39811
+Total_count: 40000
+Sequence Length: 40000
+
+test-small.fastq results
+ACGT Sum: 10
+Total_count: 10
+Sequence Length: 10
+
+
+Some of the files compute to similar values, i.e. sample 1 and 2 have the same
+total count and sequence length but differing ACGT sums. This is also the case 
+for high-gc 1 and 2, though high-gc 2 and moderate-gc 1 share the same results;
+the rest of the samples are unique.
+ 
+My code was computing the wrong GC content, however, it was because I was 
+modifying the code in one location and running it from another. The two files 
+shared the same name, but were in different locations. Once the duplicate was
+removed, I was able to correctly compute the GC content.
+
+
+Problem 7:
+
+Sample_1.fastq
+AT/GC-Ratio: 1.32234161747
+
+
+Problem 8:
+
+Sample_1.fastq
+Moderate GC content
+
+
+
+Collaboration and Reflection:
+
+
+Sam Goldsmith and I collaborated in tutoring lab on Friday.
+
+I really enjoyed that this utilized the command line; I really had no real prior
+experience utilizing the command line to do anything other than browse files and
+simple dos stuff from a long time ago. 
+I really enjoyed the context of these assignments, getting to modify stuff that
+has real world value and impliation was really cool.

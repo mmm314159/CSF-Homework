@@ -64,32 +64,32 @@ c_count = 0
 g_count = 0
 t_count = 0
 
+
 # for each base pair in the string,
 for bp in seq:
-    # increment the total number of bps we've seen
-    total_count = total_count + 1
-
-    # next, if the bp is a G or a C,
-    if bp == 'C' or bp == 'G':
-        # increment the count of gc
-        gc_count = gc_count + 1
-    # next, if the bp is an A or a T,
-    if bp == 'A' or bp == 'T':
-        at_count = at_count + 1
+           
     if bp == 'A':
         a_count = a_count + 1
-    if bp == 'C':
+        at_count = at_count + 1
+        total_count = total_count + 1
+    elif bp == 'C':
         c_count = c_count + 1
-    if bp == 'G':
+        gc_count = gc_count + 1
+        total_count = total_count + 1
+    elif bp == 'G':
         g_count = g_count + 1
-    if bp == 'T':
+        gc_count = gc_count + 1
+        total_count = total_count + 1
+    elif bp == 'T':
         t_count = t_count + 1
+        at_count = at_count + 1
+        total_count = total_count + 1
+
 
 # divide the gc_count by the total_count
-gc_content = float(gc_count) / total_count
-at_content = float(at_count) / total_count
-acgt_content = float(at_count) / float(gc_count)
-
+gc_content = float(gc_count) / float(total_count)
+at_content = float(at_count) / float(total_count)
+acgt_ratio = float(at_count) / float(gc_count)
 
 
 # Print the answer
@@ -102,11 +102,18 @@ print 'T_count:', t_count
 print 'Sum count of A, C, G, T:', a_count+c_count+g_count+t_count
 print 'Total count:', total_count
 print 'Seq length:', len(seq)
-print 'AT/GC ratio:', acgt_content
+print 'AT/GC ratio:', acgt_ratio
 
+
+
+    
 if gc_content > 0.6:
     print 'High GC content'
+
 elif gc_content < 0.4:
     print 'Low GC content:'
+        
 else:
     print 'Moderate GC content'
+
+
