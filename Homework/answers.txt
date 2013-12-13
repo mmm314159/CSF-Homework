@@ -1,0 +1,67 @@
+Name: Branddon Gordon
+Evergreen Login: Gorbra14
+Computer Science Foundations
+Programming as a Way of Life
+Fall 2013
+Homework 3 
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+Problem 1:
+
+(No answers in this file.)
+
+Problem 2:
+
+Sample 1
+GC-content: 0.43029262963
+Sample 2
+GC-content: 0.451051333333
+Sample 3
+GC-content: 0.646864112524
+Sample 4
+GC-content: 0.347852341166
+Sample 5
+GC-content: 0.263157894737
+Sample 6 
+GC-content: 0.491518518519
+
+Problem 3:
+
+Commenting out the variable linenum throws a name error, on line 43,
+the variable linenum is called and incremented. We commented out it's 
+initialization, so when the program attempted to call the variable in order
+to increment it, it was not defined, therefore doesn't exist.
+Seq is the sequence variable as an open string that lists all the nucleotides
+that have been processed so far.
+
+Commenting out gc_count = 0 does the same thing as commenting out linenum; it
+is called as a variable, and since we commented it out, it was never initialized
+and therefore cannot be called.
+
+Problem 4:
+
+GC_content: 0.3
+AT_content: 0.7
+
+Collaboration:
+
+I examined the file Cameron Casey had uploaded into git, he has helped me
+understand previous homework. After examining his code, I found it easier
+just to write my own. However, having his available as a complete, functioning
+copy let me backwards engineer some of the parts I had a little trouble with.
+I will likely take this approach again in the future, as backwards engineering
+really helps me understand key ideas.
+
+Reflection:
+
+I enjoyed this assignment because it provided context that is relevant to the
+real world. Actually writing a program (however small) that is similar in 
+intent to some of the most complicated coding and scientific discoveries of 
+my lifetime was really cool. And I'm a total genetics geek.
