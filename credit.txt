@@ -1,0 +1,9 @@
+Do the following to get credit:
+
+* Finish hw3 and hw4, commit the file dna_analysis.py and results.txt into your github repo.
+* Write and submit a self-eval and faculty evaluation for me, Neal, and Sherri online at my.evergreen.edu
+* Show up for tutoring tomorrow (Friday) 10am - 3pm in one of the labs (LIB 2610 or 2612, check them all)
+
+Complete them by 5pm Friday.
+
+Thanks, Paul
