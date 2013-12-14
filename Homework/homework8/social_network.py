@@ -13,40 +13,42 @@ import random
 ###
 ### Problem 1a
 ###
+'''
 
-practice_graph = nx.Graph()
+G=nx.Graph()
 
-practice_graph.add_node("A")
-practice_graph.add_node("B")
-practice_graph.add_node("C")
-# TODO: Add more here...
+G.add_node('A')
+G.add_node('B')
+G.add_node('C')
+G.add_node('D')
+G.add_node('E')
+G.add_node('F')
 
-practice_graph.add_edge("A", "B")
-practice_graph.add_edge("A", "C")
-practice_graph.add_edge("B", "C")
-# TODO: Add more here...
+G.add_edge('A','B')
+G.add_edge('A','C')
+G.add_edge('B','C')
+G.add_edge('B','D')
+G.add_edge('C','D')
+G.add_edge('C','F')
+G.add_edge('D','F')
+G.add_edge('E','D')
+
+nx.draw(G)
+plt.show()
+
 
 assert len(practice_graph.nodes()) == 6
 assert len(practice_graph.edges()) == 8
 
-def draw_practice_graph():
-    """Draw practice_graph to the screen."""
-    nx.draw(practice_graph)
-    plt.show()
 
-# Comment out this line after you have visually verified your practice graph.
-# Otherwise, the picture will pop up every time that you run your program.
-draw_practice_graph()
-
+'''
 
 ###
 ### Problem 1b
 ###
 
-# (Your code goes here.)
 
-assert len(rj.nodes()) == 11
-assert len(rj.edges()) == 17
+rj=nx.Graph()
 
 def draw_rj():
     """Draw the rj graph to the screen and to a file."""
@@ -54,10 +56,47 @@ def draw_rj():
     plt.savefig("romeo-and-juliet.pdf")
     plt.show()
 
+rj.add_node('Nurse')
+rj.add_node('Juliet')
+rj.add_node('Tybalt')
+rj.add_node('Capulet')
+rj.add_node('Friar Laurence')
+rj.add_node('Romeo')
+rj.add_node('Benvolio')
+rj.add_node('Montague')
+rj.add_node('Escalus')
+rj.add_node('Mercutio')
+rj.add_node('Paris')
+
+rj.add_edge('Nurse', 'Juliet')
+rj.add_edge('Juliet', 'Tybalt')
+rj.add_edge('Juliet', 'Capulet')
+rj.add_edge('Juliet', 'Friar Laurence')
+rj.add_edge('Juliet', 'Romeo')
+rj.add_edge('Tybalt', 'Capulet')
+rj.add_edge('Capulet', 'Escalus')
+rj.add_edge('Capulet', 'Paris')
+rj.add_edge('Romeo', 'Friar Laurence')
+rj.add_edge('Romeo', 'Benvolio')
+rj.add_edge('Romeo', 'Montague')
+rj.add_edge('Romeo', 'Mercutio')
+rj.add_edge('Benvolio', 'Montague')
+rj.add_edge('Montague', 'Escalus')
+rj.add_edge('Escalus', 'Mercutio')
+rj.add_edge('Escalus', 'Paris')
+rj.add_edge('Paris', 'Mercutio')
+
+
+assert len(rj.nodes()) == 11
+assert len(rj.edges()) == 17
 # Comment out this line after you have visually verified your rj graph and
 # created your PDF file.
 # Otherwise, the picture will pop up every time that you run your program.
 draw_rj()
+
+''' COMMENTED OUT THE REMAINDER OF THE WORK TO MORE EASILY DEMONSTRATE
+        LINES 113 TO 272
+
 
 
 ###
@@ -217,3 +256,4 @@ assert len(facebook.edges()) == 817090
 ###
 ### Problem 12
 ###
+'''
